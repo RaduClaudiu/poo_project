@@ -205,6 +205,7 @@ bool emailFormat(string email)
 	return regex_match(email, pattern);
 }
 
+//clasa Film
 class Film : public Afisare
 {
 private:
@@ -452,7 +453,7 @@ ostream& operator<<(ostream& o, Film& f)
 	return o;
 };
 
-
+//clasa SalaSpectacol
 class SalaSpectacol: public Afisare
 {
 private:
@@ -1089,9 +1090,20 @@ public:
 
 
 	//afiseaza datele spectatorului
-	void afiseazaSpectator()
+	void afiseaza()
 	{
 		cout << "Spectator: " << nume << " Telefon: " << telefon << " Email: " << email << endl;
+	}
+	
+	//afiseaza datele spectatorului- functie virtuala cu redefinire in clasa derivata 
+	virtual void afiseazaSpectator()
+	{
+		afiseaza();
+	}
+	//afiseaza tipul spectatorului
+	virtual void afiseazaTip()
+	{
+		cout << "Spectator obisnuit";
 	}
 
 	//setez numele spectatorului din parametru
@@ -1183,7 +1195,7 @@ public:
 //apelez functia din definitia clasei
 ostream& operator << (ostream& o, Spectator& s)
 {
-	s.afiseazaSpectator();
+	s.afiseaza();
 	return o;
 }
 
@@ -1315,12 +1327,24 @@ public:
 
 
 	//afiseaza Spectator specializat
-	void afiseazaSS()
+	void afiseaza()
 	{
 		Spectator* a = this; //pointer catre Spectator pentru apelarea operatorului din clasa de baza
 		cout << *a;
-		cout << "Tip Spectator: " << tipSpecializare << " Detalii: " << detaliiSpecializare << endl;
+		cout << "Tip Spectator: " << tipSpecializare << endl<< " Detalii: " << detaliiSpecializare << endl;
 		cout << "Beneficiaza de o reducere de: " << procentReducereBilet << "%" << endl;
+	}
+	
+	//afiseaza datele spectatorului- redefinire functie virtuala
+	void afiseazaSpectator() 
+	{
+		this->afiseaza();
+	}
+
+	//afiseaza tipul spectatorului
+	void afiseazaTip()
+	{
+		cout << this->tipSpecializare;
 	}
 	
 	//definire functie nume(), mostenita din clasa virtuala
@@ -1334,7 +1358,7 @@ public:
 //supraincarcare pentru operator de scriere <<
 ostream& operator << (ostream& o, SpectatorSpecializat& s)
 {
-	s.afiseazaSS();
+	s.afiseaza();
 	return o;
 }
 
@@ -1679,7 +1703,7 @@ public:
 	bool arhivare()
 	{
 		fstream b;
-		b.open("bilete.txt", ios::out | ios::app | ios::_Nocreate);//deschiderea fisierului bilete in mod text, nu rescriu daca exista, scriu la sfarsit 
+		b.open("bilete.dat", ios::out | ios::app | ios::_Nocreate | ios::binary);//deschiderea fisierului bilete in mod binar, nu rescriu daca exista, scriu la sfarsit 
 		if (b) 
 		{
 
@@ -1708,7 +1732,7 @@ public:
 	{
 		vector<string> bilete;
 		ifstream b;
-		b.open("bilete.txt", ios::in | ios::_Nocreate);//deschiderea fisierului bilete 
+		b.open("bilete.dat", ios::in | ios::_Nocreate|ios::binary);//deschiderea fisierului bilete 
 
 		if (b)
 		{
@@ -1879,8 +1903,17 @@ public:
 	vector<Bilet*> bileteEmise;//vector pentru gestionarea biletelor emise
 	vector<Bilet*>::iterator it = bileteEmise.end();// variabila iterator pentru stocarea ultimului id adaugat in vectorul de bilete
 
+	//membri noi, de tip map (cheie, valoare) pentru gestionarea Salilor, Filmelor si Vizionarilor
+	map<int, SalaSpectacol*> mapCinema;
+	map<int, Film*> mapListaFilme;
+	map<int, Bilet*> mapBileteEmise;
+	map<int, Spectator*> mapSpectatori;
+
+
 	//constructorul default
 	masterCinema() :nss(0), nf(0), z(0), cinema(NULL), ListaFilme(NULL), dataStart(""), oreVizionare(NULL), programCinema(NULL), tempVizionari(NULL)
+		//initializare pentru membrii map
+		,mapCinema(), mapListaFilme(), mapBileteEmise(), mapSpectatori()
 	{};
 
 	//metoda initializare
@@ -1912,6 +1945,17 @@ public:
 			cout << endl << "Am populat sala " << i << " cu urmatoarele date:" << endl << cinema[i];
 		}
 
+		//popularea containerului mapCinema
+		for (int i = 0; i < nss; i++)
+		{
+			stringstream in;
+			in << a[i];
+			mapCinema[i] = new SalaSpectacol;
+			in >> *mapCinema[i];
+			//afisez datele salii folosind supraincarcarea operatorului de scriere <<
+			cout << endl << "Am populat sala " << i << " cu urmatoarele date:" << endl << *mapCinema[i];
+		}
+
 		// INITIALIZARE FILME
 		//initializez lista de filme 
 		ListaFilme = new Film[nf];
@@ -1931,6 +1975,17 @@ public:
 			in >> ListaFilme[i];
 			//afisez datele filmului folosind supraincarcarea operatorului de scriere <<
 			cout << endl << "Am populat filmul " << i << " cu urmatoarele date:" << endl << ListaFilme[i];
+		}
+
+		//popularea containerului mapListaFilme
+		for (int i = 0; i < nf; i++)
+		{
+			stringstream in;
+			in << lf[i];
+			mapListaFilme[i] = new Film;
+			in >> *mapListaFilme[i];
+			//afisez datele filmului folosind supraincarcarea operatorului de scriere <<
+			cout << endl << "Am populat filmul " << i << " cu urmatoarele date:" << endl << *mapListaFilme[i];
 		}
 
 		//INITIALIZARE PROGRAM DE VIZIONARE
@@ -2005,6 +2060,9 @@ public:
 				}
 			}
 		}
+
+
+
 	}
 
 	//afiseaza toate programarile
@@ -2021,6 +2079,8 @@ public:
 			}
 		}
 	}
+
+
 
 	~masterCinema() {
 		delete[] cinema;//array pentru popularea salilor de cinema
@@ -2044,6 +2104,22 @@ public:
 
 		}
 
+	}
+
+	void afiseazaSpectatori()
+	{
+		cout << "Spectatorii care au achizitionat bilete la Cinema:" << endl;
+		auto iter = mapSpectatori.begin();
+		while (iter != mapSpectatori.end()) 
+		{
+			cout << iter->first << "-->";
+			iter->second->afiseazaTip();
+			cout << endl;
+			iter->second->afiseazaSpectator();
+			cout << endl;
+			++iter;
+		}
+		
 	}
 
 
@@ -2096,7 +2172,7 @@ public:
 		}
 	}
 
-	//functie pentru afdisarea detaliilor unei anumite vizionari
+	//functie pentru afisarea detaliilor unei anumite vizionari
 	//preia de la operator filmul dorit
 	//afiseaza programarile filmului respectiv 
 	//preia de la operator data de vizionare dorita
@@ -2147,11 +2223,10 @@ public:
 		return v; //returneaza id-ul vizionarii selectate de operator
 	}
 
-	
+
 	//FUNCTIE PENTRU GESTIONAREA EMITERII BILETELOR + ALTE OPERATII ASUPRA BILETELOR
 	void gestionareBilet()
 	{
-	
 		vector<Bilet*>::iterator it = bileteEmise.end();// variabila iterator pentru stocarea ultimului id adaugat in vectorul de bilete
 		char optiune = '0';
 
@@ -2165,7 +2240,7 @@ public:
 			//afisez datele ultimului bilet emis 
 			if (!(it == bileteEmise.end()))
 			{
-				cout << endl<< "ULTIMUL BILET EMIS:" << endl;
+				cout << endl << "ULTIMUL BILET EMIS:" << endl;
 				(**it).printVizionare(); //print detalii vizionare
 				cout << **(it);//supraincarcare operator scriere pentru Bilet
 			}
@@ -2190,6 +2265,8 @@ public:
 			}
 			cout << "\t\t6--> cauta bilet emis in sesiunea curenta" << endl;
 			cout << "\t\t7--> printeaza bilet din arhiva" << endl;
+			cout << "\t\t8--> cauta bilet emis in sesiunea curenta in mapBileteEmise" << endl;
+			cout << "\t\t9--> afiseaza Spectatori" << endl;
 			cout << "\t\tX--> revin la meniul principal" << endl;
 			cin >> optiune;
 
@@ -2199,12 +2276,12 @@ public:
 				veziListaFilme();
 				v = selectieProgramare();
 				v--;//v este afisat si returnat cu 1 unitate mai mult decat pozitia vizionarii in vector
-				while (v>=0)
-				{	
+				while (v >= 0)
+				{
 					cout << endl << "Avem nevoie de cateva date despre spectator .... " << endl;
 
-					SpectatorSpecializat ss;
-					Spectator s;
+					SpectatorSpecializat* ss = new SpectatorSpecializat;
+					Spectator* s = new Spectator;
 
 					//optiune spectator specializat
 					char specializare = ' ';
@@ -2217,15 +2294,15 @@ public:
 					//daca s-a selectat Y - Spectator specializat
 					if (toupper(specializare) == 'Y')
 					{
-						cin >> ss;
+						cin >> *ss;
 					}
 					else //daca s-a selectat Y - Spectator 
 					{
-						cin >> s;
+						cin >> *s;
 					}
 
 					//Incep construirea biletului
-					Bilet* b = new Bilet(*&tempVizionari[v], &s, &ss); //creez obiect nou Bilet folosind constructorul cu parametri
+					Bilet* b = new Bilet(*&tempVizionari[v], s, ss); //creez obiect nou Bilet folosind constructorul cu parametri
 					bileteEmise.push_back(b);//copie pointerul la bilet in vector
 
 					if (!bileteEmise.empty()) //verific daca vectorul s-a populat. Comanda de mai jos nu poate fi executata pe vector gol
@@ -2238,11 +2315,26 @@ public:
 						cin >> **it; //supraincarcare operator citire pentru Bilet
 						cout << **it;//supraincarcare operator scriere pentru Bilet
 						b->arhivare();
+											
+						//salvarea spectatorului in vectorul mapSpectatori
+						// folosesc prin conventie acelasi index cu cel al biletelor
+						if (toupper(specializare) == 'Y')
+						{
+							s = ss; //upcast spectator specializat catre spectator
+						}
+						mapSpectatori[b->operator int()] = s;
+						
+						//cod pentru copierea suplimentara a biletului in mapBilete
+						mapBileteEmise[b->operator int()] = b;//copie pointerul la bilet in container mapBileteEmise
+						//END cod pentru copierea suplimentara a biletului in mapBilete
+
 					}
 					else
 					{
 						cout << "biletul nu a fost copiat corect in vector";
 					}
+
+					
 
 					//optiune de emitere a unui nou bilet, pentru acelasi film
 					char biletNou = '0';
@@ -2268,21 +2360,22 @@ public:
 					{
 						v = -1;//la v=-1 ies din bucla while v>=0
 					}
-					
+
 				}
 
 			}
 
-			if (optiune == '2'&& n)
+			if (optiune == '2' && n)
 			{
 				if (!bileteEmise.empty()) //testez daca vectorul nu este gol, just in case
 				{
 					++** (it);//supraincarcare operator ++ prefix
 					cout << endl << "Detaliile filmului selectat:" << endl;
-					
+
 					(**it).printVizionare(); //print detalii vizionare
 					cout << **(it);//supraincarcare operator scriere pentru Bilet
 					(**(it)).arhivare();
+
 				}
 				system("PAUSE");
 			}
@@ -2321,9 +2414,9 @@ public:
 				if (!bileteEmise.empty()) //testez daca vectorul nu este gol, just in case
 				{
 					char anulare = ' ';
-					while (!(anulare == 'Y' || anulare == 'N'))
+					while (!(toupper(anulare) == 'Y' || toupper(anulare) == 'N'))
 					{
-						cout << endl<< "Spectatorul s-a razgandit? Y = anulez biletul / N = pastrez biletul   ";
+						cout << endl << "Spectatorul s-a razgandit? Y = anulez biletul / N = pastrez biletul   ";
 						cin >> anulare;
 					}
 					if (toupper(anulare) == 'Y')
@@ -2367,23 +2460,67 @@ public:
 
 			if (optiune == '7')
 			{
-					cout << "cauta in arhiva biletul cu id: ";
-					int a = -1; //variabila pentru id-ul biletului cautat
-					bool f = false; //setez la 1 daca gasesc un bilet
-					
-					while (!(cin >> a))
-					{
-						cout << "ERROR: Te rog sa introduci un numar :)";
-						cin.clear();
-						cin.ignore(1000, '\n');
-					}
+				cout << "cauta in arhiva biletul cu id: ";
+				int a = -1; //variabila pentru id-ul biletului cautat
+				bool f = false; //setez la 1 daca gasesc un bilet
 
-					Bilet arhiva;
-					f = arhiva.dezarhivare(a);
-					f == false ? cout << "nu am gasit biletul cu numarul: " << a << endl : cout << endl; //mesaj daca nu gasesc biletul cautat
-					system("PAUSE");
+				while (!(cin >> a))
+				{
+					cout << "ERROR: Te rog sa introduci un numar :)";
+					cin.clear();
+					cin.ignore(1000, '\n');
+				}
+
+				Bilet arhiva;
+				f = arhiva.dezarhivare(a);
+				f == false ? cout << "nu am gasit biletul cu numarul: " << a << endl : cout << endl; //mesaj daca nu gasesc biletul cautat
+				system("PAUSE");
+			}
+
+			if (optiune == '8')
+			{
+				if (!mapBileteEmise.empty()) //testez daca containerul nu este gol, just in case
+				{
+					cout << "cauta biletul cu id: ";
+					int a = -1; //variabila pentru id-ul biletului cautat
+					int f = 0; //setez la 1 daca gasesc un bilet
+					cin >> a;
+					if (mapBileteEmise.count(a))
+					{
+						f = 1;
+						cout << endl << "Detaliile filmului selectat:" << endl;
+						mapBileteEmise[a]->printVizionare();
+						cout << *mapBileteEmise[a];//supraincarcare operator scriere pentru Bilet
+					}
+					f == 0 ? cout << "nu am gasit biletul cu numarul: " << a << endl : cout << endl; //mesaj daca nu gasesc biletul cautat
+				}
+				else 
+				{
+					cout << "nu am gasit bilete emise in sesiunea curenta" << endl;;
+				}
+				system("PAUSE");
+			}
+
+			if (optiune == '9')
+			{
+				if (!mapSpectatori.empty()) //testez daca containerul nu este gol, just in case
+				{
+					system("CLS");
+					afiseazaHeader();
+					cout << "\t\tAI SELECTAT: ";
+					cout << "9--> afiseaza Spectatori" << endl;
+					cout << "Aici testez cum se comporta functiile virtuale" << endl;
+					cout << "Afisarea difera pentru Spectator si Spectator Specializat, desi containerul este de pointeri catre Spectator" << endl << endl;
+					afiseazaSpectatori();
+				}
+				else
+				{
+					cout << "Nu am gasit spectatori" << endl; 
+				}
+				system("PAUSE");
 			}
 		}
+
 	//	system("PAUSE");
 	}
 
