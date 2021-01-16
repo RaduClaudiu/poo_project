@@ -1,0 +1,1562 @@
+1
+1610652696
+Valid
+Sala 0
+Romania neamblanzita
+1610717438
+5
+2
+
+VASILACHE
+STAFF
+7.5
+0
+5
+1610652792
+Valid
+Sala 0
+Romania neamblanzita
+1610717438
+4
+2
+
+VASILACHE
+STAFF
+7.5
+0
+7
+1610652911
+Valid
+Sala 0
+Romania neamblanzita
+1610717438
+9
+12
+
+MIHAI
+X
+15
+0
+8
+1610652964
+Valid
+Sala 0
+Romania neamblanzita
+1610717438
+5
+3
+
+ALIN
+STAFF
+7.5
+0
+1
+1610735648
+Valid
+Sala 3
+Titanic
+1610735579
+5
+15
+
+ssss
+x
+15
+0
+1
+1610736036
+Valid
+Sala 1
+Pantera Neagra
+1610717992
+5
+2
+
+000
+staff
+5
+0
+1
+1610736036
+Valid
+Sala 1
+Pantera Neagra
+1610717992
+6
+1
+
+ЭЭЭЭЭЭЭЭСкѓ.
+5
+0
+1
+1610736036
+Valid
+Sala 1
+Pantera Neagra
+1610717992
+7
+1
+
+ЭЭЭЭЭЭЭЭСкѓ.
+5
+0
+1
+1610737181
+Valid
+Sala 3
+Titanic
+1610737123
+15
+25
+
+000
+staff
+7.5
+0
+1
+1610737791
+Valid
+Sala 3
+Titanic
+1610734151
+5
+25
+
+sfdsdf
+staff
+7.5
+0
+1
+1610738024
+Valid
+Sala 3
+Titanic
+1610734404
+5
+25
+
+000
+x
+15
+0
+1
+1610738214
+Valid
+Sala 1
+Pantera Neagra
+1610820994
+5
+2
+
+000
+x
+10
+0
+1
+1610738214
+Valid
+Sala 1
+Pantera Neagra
+1610820994
+6
+1
+
+ЭЭЭЭЭЭЭЭ+‘ё’
+10
+0
+1
+1610738214
+Valid
+Sala 1
+Pantera Neagra
+1610820994
+7
+1
+
+ЭЭЭЭЭЭЭЭ+‘ё’
+10
+0
+1
+1610738214
+Valid
+Sala 1
+Pantera Neagra
+1610820994
+8
+1
+
+ЭЭЭЭЭЭЭЭ+‘ё’
+10
+0
+2
+1610738434
+Valid
+Sala 4
+Pantera Neagra
+1610784994
+5
+2
+
+000
+x
+10
+0
+2
+1610738434
+Valid
+Sala 4
+Pantera Neagra
+1610784994
+6
+1
+
+ЭЭЭЭЭЭЭЭЗ’d’
+10
+0
+2
+1610738434
+Valid
+Sala 4
+Pantera Neagra
+1610784994
+7
+1
+
+ЭЭЭЭЭЭЭЭЗ’d’
+10
+0
+3
+1610738529
+in asteptare
+Sala 4
+Pantera Neagra
+1610716594
+0
+0
+
+000
+x
+0
+0
+4
+1610738570
+Valid
+Sala 4
+Pantera Neagra
+1610716594
+5
+2
+1212
+
+
+10
+0
+4
+1610738570
+Valid
+Sala 4
+Pantera Neagra
+1610716594
+6
+1
+ЭЭЭЭЭЭЭЭЭЭЭЭ
+
+10
+0
+5
+1610738610
+Valid
+Sala 1
+Pantera Neagra
+1610716594
+15
+10
+000
+
+
+10
+0
+5
+1610738610
+Valid
+Sala 1
+Pantera Neagra
+1610716594
+15
+10
+ЭЭЭЭЭЭЭЭ§’’
+
+10
+0
+5
+1610738610
+Valid
+Sala 1
+Pantera Neagra
+1610716594
+14
+1
+ЭЭЭЭЭЭЭЭ§’’
+
+10
+0
+5
+1610738610
+Valid
+Sala 1
+Pantera Neagra
+1610716594
+13
+1
+ЭЭЭЭЭЭЭЭ§’’
+
+10
+0
+5
+1610738610
+Valid
+Sala 1
+Pantera Neagra
+1610716594
+14
+1
+ЭЭЭЭЭЭЭЭ§’’
+
+10
+0
+6
+1610738671
+Valid
+Sala 1
+Pantera Neagra
+1610784994
+5
+2
+000
+
+
+10
+0
+6
+1610738671
+Valid
+Sala 1
+Pantera Neagra
+1610784994
+6
+1
+ЭЭЭЭЭЭЭЭ‹’X’
+
+10
+0
+6
+1610738671
+Valid
+Sala 1
+Pantera Neagra
+1610784994
+6
+12
+ЭЭЭЭЭЭЭЭ‹’X’
+
+10
+0
+6
+1610738671
+Valid
+Sala 1
+Pantera Neagra
+1610784994
+6
+12
+ЭЭЭЭЭЭЭЭ‹’X’
+
+10
+0
+6
+1610738671
+Valid
+Sala 1
+Pantera Neagra
+1610784994
+6
+2
+ЭЭЭЭЭЭЭЭ‹’X’
+
+10
+0
+7
+1610738888
+Valid
+Sala 3
+Titanic
+1610734594
+5
+25
+
+0000
+x
+15
+0
+1
+1610739137
+Valid
+Sala 3
+Titanic
+1610735523
+5
+25
+000
+
+
+15
+0
+1
+1610739179
+Valid
+Sala 3
+Titanic
+1610735566
+5
+25
+000
+
+
+15
+0
+1
+1610739341
+Valid
+Sala 3
+Titanic
+1610735726
+5
+25
+000
+
+
+15
+0
+1
+1610739844
+Valid
+Sala 3
+Titanic
+1610736226
+5
+25
+
+000
+x
+15
+0
+1
+1610740008
+Valid
+Sala 3
+Titanic
+1610736387
+5
+25
+
+000
+x
+15
+0
+1
+1610740328
+Valid
+Sala 3
+Titanic
+1610736693
+5
+25
+
+000
+x
+15
+0
+1
+1610740328
+Valid
+Sala 3
+Titanic
+1610736693
+6
+1
+
+ЭЭЭЭЭЭЭЭЧ6з'Э
+15
+0
+1
+1610740328
+Valid
+Sala 3
+Titanic
+1610736693
+7
+1
+
+ЭЭЭЭЭЭЭЭЧ6з'Э
+15
+0
+1
+1610740494
+Valid
+Sala 3
+Titanic
+1610736876
+5
+25
+
+000
+x
+15
+0
+1
+1610740939
+Valid
+Sala 3
+Titanic
+1610733722
+5
+25
+
+000
+x
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+5
+25
+
+000
+x
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+5
+25
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+6
+1
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+6
+1
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+7
+1
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+7
+1
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+7
+5
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+8
+1
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+7
+1
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+6
+1
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+6
+12
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+6
+12
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+5
+1
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+5
+2
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+5
+15
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+6
+1
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Valid
+Sala 3
+Titanic
+1610734152
+6
+12
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+15
+0
+1
+1610741365
+Anulat
+Sala 3
+Titanic
+1610734152
+0
+0
+
+ЭЭЭЭЭЭЭЭµlЖЭ	
+0
+0
+1
+1610741909
+Valid
+Sala 1
+Pantera Neagra
+1610821089
+5
+5
+
+000
+X
+10
+0
+1
+1610741909
+Valid
+Sala 1
+Pantera Neagra
+1610821089
+6
+1
+
+ЭЭЭЭЭЭЭЭ3М@·
+10
+0
+1
+1610742686
+Valid
+Sala 1
+Pantera Neagra
+1610821860
+5
+5
+
+0000
+X
+10
+0
+1
+1610742686
+Valid
+Sala 1
+Pantera Neagra
+1610821860
+6
+1
+
+ЭЭЭЭЭЭЭЭЭЭЭЭ
+10
+0
+1
+1610743058
+Valid
+Sala 4
+Pantera Neagra
+1610717818
+5
+1
+
+000
+X
+10
+0
+1
+1610785596
+Valid
+Sala 0
+Titanic
+1610871944
+5
+2
+
+000
+x
+15
+0
+1
+1610787087
+Valid
+Sala 3
+Titanic
+1610736668
+5
+20
+
+0000
+x
+15
+0
+1
+1610787087
+Valid
+Sala 3
+Titanic
+1610736668
+6
+1
+
+ЭЭЭЭЭЭЭЭЭЭЭЭ
+15
+0
+1
+1610787087
+Valid
+Sala 3
+Titanic
+1610736668
+7
+1
+
+ЭЭЭЭЭЭЭЭЭЭЭЭ
+15
+0
+1
+1610787382
+Valid
+Sala 1
+Pantera Neagra
+1610718958
+5
+2
+
+12313
+x
+10
+0
+1
+1610787382
+Valid
+Sala 1
+Pantera Neagra
+1610718958
+6
+1
+
+ЭЭЭЭЭЭЭЭЭЭЭЭ
+10
+0
+1
+1610787482
+Valid
+Sala 4
+Pantera Neagra
+1610719063
+5
+2
+
+000
+x
+10
+0
+1
+1610787901
+Valid
+Sala 1
+Pantera Neagra
+1610715884
+5
+2
+
+0000
+x
+10
+0
+1
+1610788109
+Valid
+Sala 1
+Pantera Neagra
+1610716083
+1
+2
+
+000
+x
+10
+0
+1
+1610788325
+Valid
+Sala 1
+Pantera Neagra
+1610716301
+2
+2
+
+0000
+x
+10
+0
+1
+1610789121
+Valid
+Sala 1
+Pantera Neagra
+1610717099
+5
+2
+
+000
+x
+10
+0
+1
+1610789521
+Valid
+Sala 1
+Pantera Neagra
+1610717496
+5
+2
+
+0000
+x
+10
+0
+1
+1610790109
+Valid
+Sala 1
+Pantera Neagra
+1610718090
+5
+2
+
+000
+X
+10
+0
+1
+1610790109
+Valid
+Sala 1
+Pantera Neagra
+1610718090
+6
+1
+
+ЭЭЭЭЭЭЭЭ,еEЇ
+10
+0
+1
+1610790515
+Valid
+Sala 1
+Pantera Neagra
+1610718495
+5
+2
+
+000
+x
+10
+0
+1
+1610790825
+Valid
+Sala 1
+Pantera Neagra
+1610718792
+2
+2
+
+000
+x
+10
+0
+1
+1610791510
+Valid
+Sala 1
+Pantera Neagra
+1610715889
+5
+2
+
+000
+x
+10
+0
+1
+1610791510
+Valid
+Sala 1
+Pantera Neagra
+1610715889
+6
+1
+
+ЭЭЭЭЭЭЭЭҐuц
+10
+0
+1
+1610791976
+Valid
+Sala 1
+Pantera Neagra
+1610716359
+5
+2
+
+000
+x
+10
+0
+1
+1610791976
+Valid
+Sala 1
+Pantera Neagra
+1610716359
+6
+1
+
+ЭЭЭЭЭЭЭЭhQЦ»
+10
+0
+1
+1610791976
+Valid
+Sala 1
+Pantera Neagra
+1610716359
+7
+1
+
+ЭЭЭЭЭЭЭЭhQЦ»
+10
+0
+1
+1610791976
+Valid
+Sala 1
+Pantera Neagra
+1610716359
+8
+1
+
+ЭЭЭЭЭЭЭЭhQЦ»
+10
+0
+1
+1610791976
+Valid
+Sala 1
+Pantera Neagra
+1610716359
+7
+1
+
+ЭЭЭЭЭЭЭЭhQЦ»
+10
+0
+1
+1610791976
+Valid
+Sala 1
+Pantera Neagra
+1610716359
+7
+2
+
+ЭЭЭЭЭЭЭЭhQЦ»
+10
+0
+1
+1610791976
+Valid
+Sala 1
+Pantera Neagra
+1610716359
+7
+2
+
+ЭЭЭЭЭЭЭЭhQЦ»
+10
+0
+1
+1610791976
+Anulat
+Sala 1
+Pantera Neagra
+1610716359
+0
+0
+
+ЭЭЭЭЭЭЭЭhQЦ»
+0
+0
+1
+1610792440
+Valid
+Sala 1
+Pantera Neagra
+1610716796
+5
+2
+
+000
+X
+10
+0
+1
+1610793193
+Valid
+Sala 1
+Pantera Neagra
+1610717574
+5
+2
+
+000
+x
+10
+0
+2
+1610793239
+in asteptare
+Sala 1
+Pantera Neagra
+1610717574
+0
+0
+
+000
+x
+0
+0
+1
+1610793439
+Valid
+Sala 1
+Pantera Neagra
+1610717817
+5
+2
+
+000
+x
+10
+0
+2
+1610793463
+Valid
+Sala 1
+Pantera Neagra
+1610717817
+3
+2
+
+000
+x
+10
+0
+1
+1610794438
+Valid
+Sala 1
+Pantera Neagra
+1610823140
+5
+2
+
+000
+x
+10
+0
+2
+1610794801
+in asteptare
+Sala 1
+Pantera Neagra
+1610823140
+0
+0
+
+000
+X
+0
+0
+3
+1610794830
+Valid
+Sala 1
+Pantera Neagra
+1610823140
+3
+2
+
+000
+X
+10
+0
+1
+1610794969
+Valid
+Sala 4
+Pantera Neagra
+1610715715
+5
+2
+
+000
+X
+10
+0
+1
+1610794969
+Valid
+Sala 4
+Pantera Neagra
+1610715715
+6
+1
+
+ЭЭЭЭЭЭЭЭЯЦЗХ
+10
+0
+1
+1610794969
+Valid
+Sala 4
+Pantera Neagra
+1610715715
+7
+1
+
+ЭЭЭЭЭЭЭЭЯЦЗХ
+10
+0
+1
+1610795473
+Valid
+Sala 4
+Pantera Neagra
+1610716244
+5
+2
+
+000
+x
+10
+0
+2
+1610795942
+Valid
+Sala 4
+Pantera Neagra
+1610716244
+5
+3
+
+000
+x
+10
+0
+2
+1610795942
+Valid
+Sala 4
+Pantera Neagra
+1610716244
+6
+1
+
+ЭЭЭЭЭЭЭЭwє¦Y
+10
+0
+2
+1610795942
+Valid
+Sala 4
+Pantera Neagra
+1610716244
+5
+1
+
+ЭЭЭЭЭЭЭЭwє¦Y
+10
+0
+1
+1610796551
+Valid
+Sala 3
+Titanic
+1610735286
+5
+2
+
+000
+x
+15
+0
+1
+1610796551
+Valid
+Sala 3
+Titanic
+1610735286
+6
+1
+
+ЭЭЭЭЭЭЭЭ¶ѓ›Ч
+15
+0
+1
+1610796551
+Valid
+Sala 3
+Titanic
+1610735286
+7
+1
+
+ЭЭЭЭЭЭЭЭ¶ѓ›Ч
+15
+0
+1
+1610796652
+Valid
+Sala 4
+Pantera Neagra
+1610717417
+3
+2
+
+000
+x
+10
+0
+1
+1610796652
+Valid
+Sala 4
+Pantera Neagra
+1610717417
+4
+1
+
+ЭЭЭЭЭЭЭЭіМ
+10
+0
+1
+1610796652
+Valid
+Sala 4
+Pantera Neagra
+1610717417
+5
+1
+
+ЭЭЭЭЭЭЭЭіМ
+10
+0
+1
+1610796652
+Valid
+Sala 4
+Pantera Neagra
+1610717417
+6
+1
+
+ЭЭЭЭЭЭЭЭіМ
+10
+0
+1
+1610797611
+Valid
+Sala 1
+Pantera Neagra
+1610718363
+5
+2
+
+000
+x
+10
+0
+1
+1610797611
+Valid
+Sala 1
+Pantera Neagra
+1610718363
+6
+1
+
+ЭЭЭЭЭЭЭЭґљЭ
+10
+0
+1
+1610797611
+Valid
+Sala 1
+Pantera Neagra
+1610718363
+7
+1
+
+ЭЭЭЭЭЭЭЭґљЭ
+10
+0
+1
+1610797992
+Valid
+Sala 4
+Pantera Neagra
+1610718743
+5
+2
+
+000
+x
+10
+0
+2
+1610798027
+in asteptare
+Sala 4
+Pantera Neagra
+1610718743
+0
+0
+000
+
+
+0
+0
+3
+1610798061
+Valid
+Sala 4
+Pantera Neagra
+1610718743
+3
+4
+
+000
+x
+10
+0
+4
+1610798094
+in asteptare
+Sala 4
+Pantera Neagra
+1610718743
+0
+0
+ddd
+
+
+0
+0
+2
+1610798483
+Valid
+Sala 3
+Titanic
+1610697607
+5
+2
+
+000
+x
+15
+0
+2
+1610798483
+Valid
+Sala 3
+Titanic
+1610697607
+6
+1
+
+ЭЭЭЭЭЭЭЭn%
+15
+0
+2
+1610798483
+Valid
+Sala 3
+Titanic
+1610697607
+7
+1
+
+ЭЭЭЭЭЭЭЭn%
+15
+0
+2
+1610798483
+Valid
+Sala 3
+Titanic
+1610697607
+7
+15
+
+ЭЭЭЭЭЭЭЭn%
+15
+0
+1
+1610798956
+Valid
+Sala 1
+Pantera Neagra
+1610716114
+5
+2
+
+000
+x
+10
+0
